@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuitaPro</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7565d787a3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- *********************** Navbar ******************************** -->
+    <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><strong>GuitaPro</strong></a>
+            <button class="navbar-toggler float-right" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Lessons
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="alllessons.html">All Lessons</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="beginner.html">Beginner</a>
+                            <a class="dropdown-item" href="#">Intermidiate</a>
+                            <a class="dropdown-item" href="#">Advanced</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="songs.html">Songs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tools.html">Tools & Tips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="private.html">Get Private Lessons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign up</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- ********************** Navbar Ends ****************************** -->
+
+    <!-- ********************** Full Page Intro ************************** -->
+    <div class="view"
+        style="background-image: url('img/cover.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center; height: 41rem;">
+        <!-- Mask & flexbox options-->
+
+        <!-- Content -->
+        <div class="container h-100 d-flex align-items-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group">
+                        <label for="name" class="text-white">Full Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="David Gilmour" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tel" class="text-white">Phone Number</label>
+                        <input type="tel" class="form-control" id="tel" placeholder="11-222-333"
+                            pattern="[0-9]{2}-[0-9]{3}-[0-9]{3}" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="text-white">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="guitartype" class="text-white">Favourite Guitar Type</label>
+                        <select class="form-control" id="guitartype">
+                            <option>Classic Guitar</option>
+                            <option>Acoustic Guitar</option>
+                            <option>Electric Guitar</option>
+                        </select>
+                    </div>
+                    <label class="text-white">Favourite Music Genre</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label text-white" for="inlineCheckbox1">Blues</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label text-white" for="inlineCheckbox2">Jazz</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label text-white" for="inlineCheckbox3">Classic</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                        <label class="form-check-label text-white" for="inlineCheckbox4">Rock</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+                        <label class="form-check-label text-white" for="inlineCheckbox5">Alternative</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6">
+                        <label class="form-check-label text-white" for="inlineCheckbox6">Other</label>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-center"><button type="submit"
+                            class="btn btn-primary">Submit</button></div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Content -->
+
+        <!-- Mask & flexbox options-->
+    </div>
+    <!-- ********************** Full Page Intro Ends *********************** -->
+    <!-- **************************** How the lessons goes ****************************** -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="h3-responsive text-center pb-4">How the lessons goes ?</h3>
+                </div>
+            </div>
+            <div class="row pb-4">
+                <div class="col-md-6"><img src="img/cover.jpg" alt="" class="img-fluid"></div>
+                <div class="col-md-6">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores corporis est, eveniet,
+                        similique itaque necessitatibus quam enim totam nostrum explicabo optio aliquam? Consectetur
+                        nisi nostrum velit similique necessitatibus explicabo quae.</p>
+                </div>
+            </div>
+            <div class="row pb-4">
+                <div class="col-md-6">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores corporis est, eveniet,
+                        similique itaque necessitatibus quam enim totam nostrum explicabo optio aliquam? Consectetur
+                        nisi nostrum velit similique necessitatibus explicabo quae.</p>
+                </div>
+                <div class="col-md-6"><img src="img/cover.jpg" alt="" class="img-fluid"></div>
+            </div>
+        </div>
+    </section>
+    <!-- **************************** How lessons goes Ends ****************************** -->
+    <!-- **************************** Our Coaches ****************************** -->
+    <section>
+        <div class="container pb-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-center">Our Coaches</h3>
+                    <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolores nulla
+                        placeat sed eveniet
+                        consectetur molestias debitis eum, illo expedita doloremque reiciendis repellendus architecto
+                        enim
+                        assumenda exercitationem vero, sunt minus.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/cover.jpg" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/cover.jpg" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/cover.jpg" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- **************************** Our Coaches Ends ****************************** -->
+    <!-- **************************** Testemonials ****************************** -->
+    <section>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-center">What our students said</h3>
+                    <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolores nulla
+                        placeat sed eveniet
+                        consectetur molestias debitis eum, illo expedita doloremque reiciendis repellendus architecto
+                        enim
+                        assumenda exercitationem vero, sunt minus.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/cover.jpg" class="card-img-top rounded-circle w-50 d-flex align-self-center mt-3"
+                            alt="img">
+                        <div class="card-body">
+                            <p class="card-text text-center"><i class="fas fa-quote-right fa-2x"></i><br>Some quick
+                                example text to
+                                build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/cover.jpg" class="card-img-top rounded-circle w-50 d-flex align-self-center mt-3"
+                            alt="img">
+                        <div class="card-body">
+                            <p class="card-text text-center"><i class="fas fa-quote-right fa-2x"></i><br>Some quick
+                                example text to
+                                build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/cover.jpg" class="card-img-top rounded-circle w-50 d-flex align-self-center mt-3"
+                            alt="img">
+                        <div class="card-body">
+                            <p class="card-text text-center"><i class="fas fa-quote-right fa-2x"></i><br>
+                                Some
+                                quick example
+                                text to build
+                                on
+                                the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- **************************** Testemonials Ends ****************************** -->
+    <!-- ************************** Footer *********************************-->
+
+    <footer class="section footer-classic context-dark bg-image border-top border-white"
+        style="background: transparent;">
+        <div class="container py-3">
+            -<div class="row row-30">
+                <div class="col-md-4 col-6">
+                    <div class="pr-xl-4"><strong>
+                            <h5 class="text-center py-3">A propos</h5>
+                            <h4 class="">GuitaPro</h4>
+                        </strong>
+                        <p class="" style="font-size: small;">We are a 5 stars hotel, All hotels and
+                            vacation rental properties
+                            listed
+                            on this website are independently owned and operated.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6">
+                    <h5 class="text-center py-4">Contacts</h5>
+                    <dl class="contact-list ">
+                        <dt><i class="fas fa-map-marked-alt"></i> Address:</dt>
+                        <dd>798 South Park Avenue, Tunisia, Tunis</dd>
+                    </dl>
+                    <dl class="contact-list ">
+                        <dt><i class="fas fa-envelope-open-text"></i> Email:</dt>
+                        <dd><a href="mailto:#">GuitaPro2020@gmail.com</a></dd>
+                    </dl>
+                    <dl class="contact-list ">
+                        <dt><i class="fas fa-phone-alt"></i> Phones:</dt>
+                        <dd><a href="tel:#">+216 52 669 340</a> <span>or</span> <a href="tel:#">+216 21 478 360</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="text-center">
+                        <h5 class="w-100 py-4">Links</h5>
+                        <div class="d-flex justify-content-around">
+                            <a href="https://www.facebook.com/bootsnipp"><i
+                                    class="fa fa-facebook-square fa-3x social"></i></a>
+                            <a href="https://twitter.com/bootsnipp"><i class="fab fa-instagram fa-3x social"></i></a>
+                            <a href="https://plus.google.com/+Bootsnipp-page"><i
+                                    class="fab fa-youtube-square fa-3x social"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="rights pt-3"><span>© </span><span class="copyright-year">2020</span><span>
+                        </span><span>Wissem
+                            Aouichi</span><span>. </span><span>All
+                            Rights Reserved.</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ************************** Footer Ends*********************************-->
+
+    <!-- ********************** Bootstrap JS *************************** -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.bundle.js.map"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js.map"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.js.map"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js.map"></script>
+</body>
+
+</html>
