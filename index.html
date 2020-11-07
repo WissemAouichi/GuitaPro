@@ -12,9 +12,9 @@
 
 <body>
     <!-- *********************** Navbar ******************************** -->
-    <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top" id="mainnav">
         <div class="container">
-            <a class="navbar-brand" href="#"><strong>GuitaPro</strong></a>
+            <a class="navbar-brand " href="#"><strong>GuitaPro</strong></a>
             <button class="navbar-toggler float-right" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -31,7 +31,7 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="alllessons.html">All Lessons</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Beginner</a>
+                            <a class="dropdown-item" href="beginner.html">Beginner</a>
                             <a class="dropdown-item" href="#">Intermidiate</a>
                             <a class="dropdown-item" href="#">Advanced</a>
                         </div>
@@ -46,10 +46,10 @@
                         <a class="nav-link" href="private.html">Get Private Lessons</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
+                        <a class="nav-link" href="signin.html">Sign in</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sign up</a>
+                        <a class="nav-link" href="signup.html">Sign up</a>
                     </li>
                 </ul>
 
@@ -59,18 +59,20 @@
     <!-- ********************** Navbar Ends ****************************** -->
 
     <!-- ********************** Full Page Intro ************************** -->
-    <div class="view"
-        style="background-image: url('img/cover.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center; height: 41rem;">
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+    <div class="view" id="hero">
         <!-- Mask & flexbox options-->
 
         <!-- Content -->
         <div class="container h-100">
             <div class="d-flex h-100 text-center align-items-center">
                 <div class="w-100 text-white">
-                    <h1 class="display-3 h1-responsive">GuitaPro</h1>
-                    <p class="lead mb-0">Bend it like Prince</p><br>
+                    <h1 class="display-1 scratched">GuitaPro</h1>
+                    <h2 class="lead mb-0 display-4" id="slogan">Music
+                        for Everyone
+                    </h2><br>
                     <div class="d-flex justify-content-center">
-                        <button class="btn btn-primary">Get Started</button>
+                        <button class="btn btn-secondary">Get Started</button>
                     </div>
                 </div>
             </div>
@@ -82,94 +84,130 @@
     </div>
     <!-- ********************** Full Page Intro Ends *********************** -->
     <!-- ********************** What you can learn *********************** -->
-    <div class="col-md-12">
+    <div class="col-md-12" style="background-color: #a5bdbc;">
         <header class="py-5 justify-content-center">
-            <h2 class="text-center h2-responsive">
+            <h1 class="text-center text-justify scratched text-white">
+                What you can learn</h1>
 
-                What you can learn</h2>
-            <p class="text-center px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quasi
-                hic, magni similique doloribus saepe reprehenderit natus eaque eveniet delectus nihil quos omnis,
-                molestias id. Soluta eos quaerat quod accusamus.</p>
+            <p class="text-center px-5 text-justify">The best beginner guitar course ever can
+                be found right here! Super fun,
+                effective and improvment GRANTED! <br>
+                Hundreds of awesome easy songs for beginners and detailed accurate songs for more advanced players. <br>
+                Courses on Blues, Jazz, Acoustic Fingerstyle and many more! <br>
+                Join our community to use My Practice Assistant to track your practice and progress!</p>
         </header>
     </div>
-    <div class="container">
-        <div class="col-md-12 py-5">
-            <div class="row">
-                <div class="col-md-6 col-sm-12"><img src="img/cover.jpg" alt="img" class="w-100"> </div>
-                <div class="col-md-6 col-sm-12">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore quas molestias expedita,
-                        repudiandae tempore, harum deleniti voluptatibus est vero ex blanditiis praesentium placeat,
-                        nam
-                        non sed reiciendis dignissimos ipsa. Nemo!</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-12">
-            <div class="row">
-                <div class="col-md-6 col-sm-12 py-5">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore quas molestias expedita,
-                        repudiandae tempore, harum deleniti voluptatibus est vero ex blanditiis praesentium placeat,
-                        nam
-                        non sed reiciendis dignissimos ipsa. Nemo!</p>
-                </div>
-                <div class="col-md-6 col-sm-12"><img src="img/cover.jpg" alt="img" class="w-100"> </div>
-            </div>
-        </div>
-        <div class="col-md-12 py-5">
-            <div class="row">
-                <div class="col-md-6 col-sm-12"><img src="img/cover.jpg" alt="img" class="w-100"> </div>
-                <div class="col-md-6 col-sm-12">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore quas molestias expedita,
-                        repudiandae tempore, harum deleniti voluptatibus est vero ex blanditiis praesentium placeat,
-                        nam
-                        non sed reiciendis dignissimos ipsa. Nemo!</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <section>
-        <div class="container-fluid mb-5">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="border mx-2">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, quas architecto, eum debitis
-                            unde
-                            obcaecati vero nemo eveniet tempore,</p>
+    <section style="background-color:#a5bdbc;">
+        <div class="container">
+            <div class="col-md-12 py-5">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12" id="videowrapper"><video autoplay loop muted="1" preload="metadata"
+                            playsinline class="w-100 h-100" src="img/guitarcenter.mp4">
+                    </div>
+                    <div class="col-md-6 col-sm-12 align-self-center" id="home1">
+
+                        <h3 class="text-white py-2 scratched px-4"> Step by Step Free Beginner Guitar Lessons</h3> <br>
+                        <p class="text-justify px-4">GuitaPro offers comprehensive musicianship through active
+                            learning for children and adults. Our music
+                            educators are highly qualified and share a love of teaching. <br> <br>
+                            Our curriculum offers group experiences, private lessons, ensemble participation, theater,
+                            and camps. We believe that
+                            learning music can be fun, and we believe in the effectiveness of learning in groups.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="border mx-2">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, quas architecto, eum debitis
-                            unde
-                            obcaecati vero nemo eveniet tempore,</p>
+            </div>
+            <div class="col-md-12 py-5">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 pb-5 align-self-center">
+                        <h3 class="text-white py-2 scratched px-4">Guitar Technique Video Lessons</h3> <br>
+                        <p class="text-justify px-4">This is a collection of stand-alone lessons about various core
+                            guitar
+                            techniques. These
+                            lessons feature the best lessons
+                            by the best instructors we could find on each topic from across YouTube.
+                            <br> <br>
+                            Our music school offers a variety of groups to learn music and sharpen your skills. If you
+                            prefer private lessons, we
+                            have what to offer you and your children.
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-sm-12"><img src="img/h2.jpg" alt="img" class="w-100 rounded" id="imghome">
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="border mx-2">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, quas architecto, eum debitis
-                            unde
-                            obcaecati vero nemo eveniet tempore,</p>
+            </div>
+            <div class="col-md-12 py-5">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12" id="videowrapper"><video autoplay loop muted="1" preload="metadata"
+                            playsinline class="w-100 h-100" src="img/yamaha.mp4">
+                    </div>
+                    <div class="col-md-6 col-sm-12 py-5 align-self-center">
+                        <h3 class="text-white py-2 scratched px-4">Guitar Theory, Ear Training, & Reading</h3> <br>
+                        <p class="text-justify px-4">Learn about the many concepts involved with music theory, ear
+                            training,
+                            and reading music.
+                            Here you'll find individual
+                            lesson videos that cover a vast number of different theory-related topics. <br><br>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section>
-        <div class="container">
+    <!-- *************************** Cards *********************************-->
+    <section id="cardsection">
+        <div class=" container p-5">
+            <div class="row d-flex justify-content-center">
+                <img src="img/homebig.png" class="img-fluid w-50 h-50" id="home1pic" alt="">
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-12 py-2">
+                    <div class="border mx-2 p-4" id="homecard1">
+                        <p class=" text-center cardtext text-justify">
+                            <i class="fas fa-music fa-3x p-2"></i>
+                        <h4 class="py-2 h4-responsive">GREAT FOR BEGINNERS</h4>
+                        As a beginner, you want one thing. To learn to play, as quickly as possible. Our video
+                        tutorials were engineered for
+                        just that.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-12 py-2">
+                    <div class="border mx-2 p-4" id="homecard2">
+                        <p class="text-center cardtext text-justify">
+                            <i class="fas fa-user-graduate fa-3x p-2"></i>
+                        <h4 class="py-2">130,000+ STUDENTS</h4>
+                        Since 2008, tens of thousands of aspiring guitar players have learned with us. This many people
+                        can't be wrong.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-12 py-2">
+                    <div class="border mx-2 p-4" id="homecard3">
+                        <p class="cardtext text-center text-justify">
+                            <i class="fas fa-map-signs fa-3x p-2"></i>
+                        <h4 class="py-2">BASICS TO THEORY</h4>
+                        All our lessons are designed to teach you skills to use right away, as
+                        well as familiarize you with
+                        music theory to get the big picture.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="background: #fff8e5">
+        <div class="container p-5">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="img/cover.jpg" alt="" class="w-100 mb-4">
-                    <img src="img/cover.jpg" alt="" class="w-100">
+                    <img src="img/11.jpg" alt="" class="w-100 mb-5 rounded w-75" style="border-radius: 20px;">
+                    <img src="img/22.jpg" alt="" class="w-100 rounded">
                 </div>
                 <div class="col-md-6 pt-5">
-                    <img src="img/cover.jpg" alt="" class="w-100 pt-5 mb-4">
-                    <img src="img/cover.jpg" alt="" class="w-100">
+                    <img src="img/33.jpg" alt="" class="w-100 my-5 rounded w-75">
+                    <img src="img/44.jpg" alt="" class="w-100 rounded">
                 </div>
             </div>
         </div>
     </section>
-    <section>
-        <div class="view m-5"
+    <section style="background: #28363d;">
+        <div class="view p-5"
             style="background-image: url('img/cover.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center; height: 17rem;">
             <!-- Mask & flexbox options-->
 
@@ -177,7 +215,7 @@
             <div class="container h-100">
                 <div class="d-flex h-100 text-center align-items-center">
                     <div class="w-100 text-white">
-                        <h1 class="display-3 h1-responsive">GuitaPro</h1>
+                        <h1 class="display-3 h1-responsive scratched">GuitaPro</h1>
                         <p class="lead mb-0">Bend it like Prince</p><br>
                         <div class="d-flex justify-content-center">
                             <button class="btn btn-primary">Get Started</button>
@@ -190,39 +228,45 @@
     <!-- ************************** Footer *********************************-->
 
     <footer class="section footer-classic context-dark bg-image border-top border-white"
-        style="background: transparent;">
+        style="background-color:#28363d;">
         <div class="container py-3">
             <div class="row row-30">
                 <div class="col-md-4 col-6">
                     <div class="pr-xl-4"><strong>
-                            <h5 class="text-center py-3">A propos</h5>
-                            <h4 class="">GuitaPro</h4>
+                            <h4 class="text-center py-3 text-white">A propos</h4>
+                            <h5 class="text-white">GuitaPro</h5>
                         </strong>
-                        <p class="" style="font-size: small;">We are a 5 stars hotel, All hotels and
-                            vacation rental properties
-                            listed
-                            on this website are independently owned and operated.</p>
+                        <p class="text-white text-justify" style="font-size: small;">GuitaPro.com, created by Wissem
+                            Aouichi, is
+                            dedicated to bringing the highest quality guitar tutorials to beginner
+                            guitarists. <br> Through creating fun and engaging guitar lessons, we aim to spread our love
+                            of
+                            the guitar to as many new
+                            players as possible.</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-6">
-                    <h5 class="text-center py-4">Contacts</h5>
-                    <dl class="contact-list ">
-                        <dt><i class="fas fa-map-marked-alt"></i> Address:</dt>
-                        <dd>798 South Park Avenue, Tunisia, Tunis</dd>
+                <div class="col-md-4 col-6 text-center">
+                    <h4 class="text-center py-4 text-white">Contacts</h4>
+                    <dl class="contact-list">
+                        <dt class="text-white"><i class="fas fa-map-marked-alt"></i> Address:</dt>
+                        <dd class="text-white" style="font-size: small;">798 South Park Avenue, Tunisia, Tunis</dd>
                     </dl>
-                    <dl class="contact-list ">
-                        <dt><i class="fas fa-envelope-open-text"></i> Email:</dt>
-                        <dd><a href="mailto:#">GuitaPro2020@gmail.com</a></dd>
+                    <dl class="contact-list">
+                        <dt class="text-white"><i class="fas fa-envelope-open-text text-white"></i> Email:</dt>
+                        <dd><a href="mailto:#" class="text-white" style="font-size: small;">GuitaPro2020@gmail.com</a>
+                        </dd>
                     </dl>
-                    <dl class="contact-list ">
-                        <dt><i class="fas fa-phone-alt"></i> Phones:</dt>
-                        <dd><a href="tel:#">+216 52 669 340</a> <span>or</span> <a href="tel:#">+216 21 478 360</a>
+                    <dl class="contact-list">
+                        <dt class="text-white"><i class="fas fa-phone-alt text-white"></i> Phones:</dt>
+                        <dd><a href="tel:#" class="text-white" style="font-size: small;">+216 52 669 340</a>
+                            <span class="text-white">or</span> <a href="tel:#" class="text-white">+216
+                                21 478 360</a>
                         </dd>
                     </dl>
                 </div>
                 <div class="col-md-4 col-sm-12">
                     <div class="text-center">
-                        <h5 class="w-100 py-4">Links</h5>
+                        <h5 class="w-100 py-4 text-white">Links</h5>
                         <div class="d-flex justify-content-around">
                             <a href="https://www.facebook.com/bootsnipp"><i
                                     class="fa fa-facebook-square fa-3x social"></i></a>
@@ -235,7 +279,8 @@
             </div>
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <p class="rights pt-3"><span>© </span><span class="copyright-year">2020</span><span>
+                    <p class="rights pt-3 text-white" style="font-size: smaller;"><span>© </span><span
+                            class="copyright-year">2020</span><span>
                         </span><span>Wissem
                             Aouichi</span><span>. </span><span>All
                             Rights Reserved.</span></p>
@@ -246,6 +291,7 @@
     <!-- ************************** Footer Ends*********************************-->
 
     <!-- ********************** Bootstrap JS *************************** -->
+    <script src="js/button.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/bootstrap.bundle.js.map"></script>

@@ -12,7 +12,7 @@
 
 <body>
     <!-- *********************** Navbar ******************************** -->
-    <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top" id="mainnav">
         <div class="container">
             <a class="navbar-brand" href="index.html"><strong>GuitaPro</strong></a>
             <button class="navbar-toggler float-right" type="button" data-toggle="collapse"
@@ -31,7 +31,7 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="alllessons.html">All Lessons</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Beginner</a>
+                            <a class="dropdown-item" href="beginner.html">Beginner</a>
                             <a class="dropdown-item" href="#">Intermidiate</a>
                             <a class="dropdown-item" href="#">Advanced</a>
                         </div>
@@ -46,10 +46,10 @@
                         <a class="nav-link" href="private.html">Get Private Lessons</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
+                        <a class="nav-link" href="signin.html">Sign in</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sign up</a>
+                        <a class="nav-link" href="signup.html">Sign up</a>
                     </li>
                 </ul>
 
@@ -59,16 +59,16 @@
     <!-- ********************** Navbar Ends ****************************** -->
 
     <!-- ********************** Full Page Intro ************************** -->
-    <div class="view"
-        style="background-image: url('img/cover.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center; height: 41rem;">
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+    <div class="view" id="hero">
         <!-- Mask & flexbox options-->
 
         <!-- Content -->
         <div class="container h-100">
             <div class="d-flex h-100 text-center align-items-center">
                 <div class="w-100 text-white">
-                    <h1 class="display-3 h1-responsive">Lessons</h1>
-                    <p class="lead mb-0">Text here change it later</p>
+                    <h1 class="display-3 h1-responsive scratched">Lessons</h1>
+                    <p class="lead mb-0" id="slogan">Music for Everyone</p>
                 </div>
             </div>
         </div>
@@ -79,63 +79,121 @@
     </div>
     <!-- ********************** Full Page Intro Ends *********************** -->
     <!-- **************************** Lessons ****************************** -->
-    <section class="p-5 ">
+    <section class="p-5" id="alllessonssection">
+        <img src="img/lessons.png" class="position-absolute" alt="img" id="lessonsimg">
         <div class="container px-5 w-75">
             <div class="row">
-                <div class="col-md-12 py-4">Beginner</div>
+                <div class="col-md-12 py-4">
+                    <h2 style="font-family: scratched;">Beginner</h2>
+                </div>
             </div>
             <div class="row">
-                <div class="col-md-12 text-center py-4">Grade 1</div>
+                <div class="col-md-12 text-center py-4">
+                    <h3>Grade 1</h3>
+                </div>
             </div>
             <div class="row">
-                <div class="col-md-12 text-right"><a href="" class="border px-3 my-2">Lesson 1</a></div>
-                <div class="col-md-12 text-right"><a href="" class="border px-3 my-2">Lesson 2</a></div>
-                <div class="col-md-12 text-right"><a href="" class="border px-3 my-2">Lesson 3</a></div>
-                <div class="col-md-12 text-right"><a href="" class="border px-3 my-2">Lesson 4</a></div>
-                <div class="col-md-12 text-right"><a href="" class="border px-3 my-2">Lesson 5</a></div>
+                <div class="col-md-12 text-right"><a href="beginner.html" class="px-3 my-2"><img src="img/iconblue.png"
+                            alt="i">Lesson 1</a></div>
+                <div class="col-md-12 text-right"><a href="beginner/beginner2.html" class="px-3 my-2"><img
+                            src="img/iconblue.png" alt="i">Lesson 2</a></div>
+                <div class="col-md-12 text-right"><a href="beginner/beginner3.html" class="px-3 my-2"><img
+                            src="img/iconblue.png" alt="i">Lesson 3</a></div>
+                <div class="col-md-12 text-right"><a href="beginner/beginner4.html" class="px-3 my-2"><img
+                            src="img/iconblue.png" alt="i">Lesson 4</a></div>
+                <div class="col-md-12 text-right"><a href="beginner/beginner5.html" class="px-3 my-2"><img
+                            src="img/iconblue.png" alt="i">Lesson 5</a></div>
             </div>
             <div class="row">
-                <div class="col-md-12 text-center py-4">Grade 2</div>
+                <div class="col-md-12 text-center py-4">
+                    <h3>Grade 2</h3>
+                </div>
             </div>
             <div class="row">
-                <div class="col-md-12 text-right"><a href="" class="border px-3 my-2">Lesson 1</a></div>
-                <div class="col-md-12 text-right"><a href="" class="border px-3 my-2">Lesson 2</a></div>
-                <div class="col-md-12 text-right"><a href="" class="border px-3 my-2">Lesson 3</a></div>
-                <div class="col-md-12 text-right"><a href="" class="border px-3 my-2">Lesson 4</a></div>
-                <div class="col-md-12 text-right"><a href="" class="border px-3 my-2">Lesson 5</a></div>
+                <div class="col-md-12 text-right"><a href="beginner/beginnerg21.html" class="px-3 my-2"><img
+                            src="img/iconblue.png" alt="i">Lesson 1</a></div>
+                <div class="col-md-12 text-right"><a href="beginner/beginnerg22.html" class="px-3 my-2"><img
+                            src="img/iconblue.png" alt="i">Lesson 2</a></div>
+                <div class="col-md-12 text-right"><a href="beginner/beginnerg23.html" class="px-3 my-2"><img
+                            src="img/iconblue.png" alt="i">Lesson 3</a></div>
+                <div class="col-md-12 text-right"><a href="beginner/beginnerg24.html" class="px-3 my-2"><img
+                            src="img/iconblue.png" alt="i">Lesson 4</a></div>
+                <div class="col-md-12 text-right"><a href="beginner/beginnerg25.html" class="px-3 my-2"><img
+                            src="img/iconblue.png" alt="i">Lesson 5</a></div>
             </div>
             <div class="row">
-                <div class="col-md-12 text-center py-4">Grade 3 (Premium)</div>
+                <div class="col-md-12 text-center py-4">
+                    <h3>Grade 3 <span style="font-family: scratched; color: rgb(231, 217, 10) ;">Premium</span></h3>
+                </div>
             </div>
             <div class="row">
-                <div class="col-md-12 text-right"><a href="" class="border px-3 my-2">Lesson 1</a></div>
-                <div class="col-md-12 text-right"><a href="" class="border px-3 my-2">Lesson 2</a></div>
-                <div class="col-md-12 text-right"><a href="" class="border px-3 my-2">Lesson 3</a></div>
-                <div class="col-md-12 text-right"><a href="" class="border px-3 my-2">Lesson 4</a></div>
-                <div class="col-md-12 text-right"><a href="" class="border px-3 my-2">Lesson 5</a></div>
+                <div class="col-md-12 text-right"><a href="beginner/beginnerg31.html" class="px-3 my-2"><img
+                            src="img/icons8-mediator-32.png" alt="">Lesson 1</a></div>
+                <div class="col-md-12 text-right"><a href="beginner/beginnerg31.html" class="px-3 my-2"><img
+                            src="img/icons8-mediator-32.png" alt="">Lesson 2</a></div>
+                <div class="col-md-12 text-right"><a href="beginner/beginnerg31.html" class="px-3 my-2"><img
+                            src="img/icons8-mediator-32.png" alt="">Lesson 3</a></div>
+                <div class="col-md-12 text-right"><a href="beginner/beginnerg31.html" class="px-3 my-2"><img
+                            src="img/icons8-mediator-32.png" alt="">Lesson 4</a></div>
+                <div class="col-md-12 text-right"><a href="beginner/beginnerg31.html" class="px-3 my-2"><img
+                            src="img/icons8-mediator-32.png" alt="">Lesson 5</a></div>
             </div>
             <div class="row">
-                <div class="col-md-12 py-4">Intermidiate</div>
+                <div class="col-md-12 py-4">
+                    <h2 style="font-family: scratched;">Intermidiate</h2>
+                </div>
             </div>
             <div class="row">
-                <div class="col-md-12 text-center py-4">Grade 4</div>
+                <div class="col-md-12 text-center py-4">
+                    <h3>Grade 4</h3>
+                </div>
             </div>
             <div class="row">
-                <div class="col-md-12 text-right"><a href="" class="border px-3 my-2">Lesson 1</a></div>
-                <div class="col-md-12 text-right"><a href="" class="border px-3 my-2">Lesson 2</a></div>
-                <div class="col-md-12 text-right"><a href="" class="border px-3 my-2">Lesson 3</a></div>
-                <div class="col-md-12 text-right"><a href="" class="border px-3 my-2">Lesson 4</a></div>
-                <div class="col-md-12 text-right"><a href="" class="border px-3 my-2">Lesson 5</a></div>
+                <div class="col-md-12 text-right"><a href="" class="px-3 my-2"><img src="img/iconblue.png"
+                            alt="i">Lesson 1</a></div>
+                <div class="col-md-12 text-right"><a href="" class="px-3 my-2"><img src="img/iconblue.png"
+                            alt="i">Lesson 2</a></div>
+                <div class="col-md-12 text-right"><a href="" class="px-3 my-2"><img src="img/iconblue.png"
+                            alt="i">Lesson 3</a></div>
+                <div class="col-md-12 text-right"><a href="" class="px-3 my-2"><img src="img/iconblue.png"
+                            alt="i">Lesson 4</a></div>
+                <div class="col-md-12 text-right"><a href="" class="px-3 my-2"><img src="img/iconblue.png"
+                            alt="i">Lesson 5</a></div>
             </div>
             <div class="row">
-                <div class="col-md-12 text-center py-4">Grade 5 (Premium)</div>
+                <div class="col-md-12 text-center py-4">
+                    <h3>Grade 5 <span style="font-family: scratched; color: rgb(231, 217, 10) ;">Premium</span></h3>
+                </div>
             </div>
             <div class="row">
-                <div class="col-md-12 text-right"><a href="" class="border px-3 my-2">Lesson 1</a></div>
-                <div class="col-md-12 text-right"><a href="" class="border px-3 my-2">Lesson 2</a></div>
-                <div class="col-md-12 text-right"><a href="" class="border px-3 my-2">Lesson 3</a></div>
-                <div class="col-md-12 text-right"><a href="" class="border px-3 my-2">Lesson 4</a></div>
-                <div class="col-md-12 text-right"><a href="" class="border px-3 my-2">Lesson 5</a></div>
+                <div class="col-md-12 text-right"><a href="" class="px-3 my-2"><img src="img/icons8-mediator-32.png"
+                            alt="">Lesson 1</a></div>
+                <div class="col-md-12 text-right"><a href="" class="px-3 my-2"><img src="img/icons8-mediator-32.png"
+                            alt="">Lesson 2</a></div>
+                <div class="col-md-12 text-right"><a href="" class="px-3 my-2"><img src="img/icons8-mediator-32.png"
+                            alt="">Lesson 3</a></div>
+                <div class="col-md-12 text-right"><a href="" class="px-3 my-2"><img src="img/icons8-mediator-32.png"
+                            alt="">Lesson 4</a></div>
+                <div class="col-md-12 text-right"><a href="" class="px-3 my-2"><img src="img/icons8-mediator-32.png"
+                            alt="">Lesson 5</a></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 py-4">
+                    <h2 style="font-family: scratched;">Advanced</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center py-4">
+                    <h3>Grade 6 <span style="font-family: scratched; color: rgb(231, 217, 10) ;">Premium</span></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-right"><a href="" class="px-3 my-2"><img src="img/iconblue.png"
+                            alt="i">Lesson 1</a></div>
+                <div class="col-md-12 text-right"><a href="" class="px-3 my-2"><img src="img/icons8-mediator-32.png"
+                            alt="">Lesson 2</a></div>
+                <div class="col-md-12 text-right"><a href="" class="px-3 my-2"><img src="img/icons8-mediator-32.png"
+                            alt="">Lesson 3</a></div>
             </div>
         </div>
     </section>
@@ -143,39 +201,45 @@
     <!-- ************************** Footer *********************************-->
 
     <footer class="section footer-classic context-dark bg-image border-top border-white"
-        style="background: transparent;">
+        style="background-color:#28363d;">
         <div class="container py-3">
             <div class="row row-30">
                 <div class="col-md-4 col-6">
                     <div class="pr-xl-4"><strong>
-                            <h5 class="text-center py-3">A propos</h5>
-                            <h4 class="">GuitaPro</h4>
+                            <h4 class="text-center py-3 text-white">A propos</h4>
+                            <h5 class="text-white">GuitaPro</h5>
                         </strong>
-                        <p class="" style="font-size: small;">We are a 5 stars hotel, All hotels and
-                            vacation rental properties
-                            listed
-                            on this website are independently owned and operated.</p>
+                        <p class="text-white text-justify" style="font-size: small;">GuitaPro.com, created by Wissem
+                            Aouichi, is
+                            dedicated to bringing the highest quality guitar tutorials to beginner
+                            guitarists. <br> Through creating fun and engaging guitar lessons, we aim to spread our love
+                            of
+                            the guitar to as many new
+                            players as possible.</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-6">
-                    <h5 class="text-center py-4">Contacts</h5>
-                    <dl class="contact-list ">
-                        <dt><i class="fas fa-map-marked-alt"></i> Address:</dt>
-                        <dd>798 South Park Avenue, Tunisia, Tunis</dd>
+                <div class="col-md-4 col-6 text-center">
+                    <h4 class="text-center py-4 text-white">Contacts</h4>
+                    <dl class="contact-list">
+                        <dt class="text-white"><i class="fas fa-map-marked-alt"></i> Address:</dt>
+                        <dd class="text-white" style="font-size: small;">798 South Park Avenue, Tunisia, Tunis</dd>
                     </dl>
-                    <dl class="contact-list ">
-                        <dt><i class="fas fa-envelope-open-text"></i> Email:</dt>
-                        <dd><a href="mailto:#">GuitaPro2020@gmail.com</a></dd>
+                    <dl class="contact-list">
+                        <dt class="text-white"><i class="fas fa-envelope-open-text text-white"></i> Email:</dt>
+                        <dd><a href="mailto:#" class="text-white" style="font-size: small;">GuitaPro2020@gmail.com</a>
+                        </dd>
                     </dl>
-                    <dl class="contact-list ">
-                        <dt><i class="fas fa-phone-alt"></i> Phones:</dt>
-                        <dd><a href="tel:#">+216 52 669 340</a> <span>or</span> <a href="tel:#">+216 21 478 360</a>
+                    <dl class="contact-list">
+                        <dt class="text-white"><i class="fas fa-phone-alt text-white"></i> Phones:</dt>
+                        <dd><a href="tel:#" class="text-white" style="font-size: small;">+216 52 669 340</a>
+                            <span class="text-white">or</span> <a href="tel:#" class="text-white">+216
+                                21 478 360</a>
                         </dd>
                     </dl>
                 </div>
                 <div class="col-md-4 col-sm-12">
                     <div class="text-center">
-                        <h5 class="w-100 py-4">Links</h5>
+                        <h5 class="w-100 py-4 text-white">Links</h5>
                         <div class="d-flex justify-content-around">
                             <a href="https://www.facebook.com/bootsnipp"><i
                                     class="fa fa-facebook-square fa-3x social"></i></a>
@@ -188,7 +252,8 @@
             </div>
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <p class="rights pt-3"><span>© </span><span class="copyright-year">2020</span><span>
+                    <p class="rights pt-3 text-white" style="font-size: smaller;"><span>© </span><span
+                            class="copyright-year">2020</span><span>
                         </span><span>Wissem
                             Aouichi</span><span>. </span><span>All
                             Rights Reserved.</span></p>
@@ -199,6 +264,7 @@
     <!-- ************************** Footer Ends*********************************-->
 
     <!-- ********************** Bootstrap JS *************************** -->
+    <script src="js/button.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/bootstrap.bundle.js.map"></script>

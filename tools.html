@@ -12,7 +12,7 @@
 
 <body>
     <!-- *********************** Navbar ******************************** -->
-    <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top" id="mainnav">
         <div class="container">
             <a class="navbar-brand" href="index.html"><strong>GuitaPro</strong></a>
             <button class="navbar-toggler float-right" type="button" data-toggle="collapse"
@@ -59,16 +59,16 @@
     <!-- ********************** Navbar Ends ****************************** -->
 
     <!-- ********************** Full Page Intro ************************** -->
-    <div class="view"
-        style="background-image: url('img/cover.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center; height: 41rem;">
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+    <div class="view" id="hero">
         <!-- Mask & flexbox options-->
 
         <!-- Content -->
         <div class="container h-100">
             <div class="d-flex h-100 text-center align-items-center">
                 <div class="w-100 text-white">
-                    <h1 class="display-3 h1-responsive">Tools & Tips</h1>
-                    <p class="lead mb-0">Text here change it later</p>
+                    <h1 class="display-3 h1-responsive scratched">Tools & Tips</h1>
+                    <p class="lead mb-0" id="slogan">Music for Everyone</p>
                 </div>
             </div>
         </div>
@@ -79,195 +79,323 @@
     </div>
     <!-- ********************** Full Page Intro Ends *********************** -->
     <!-- **************************** Tools ****************************** -->
-    <div class="col-md-12">
-        <header class="py-5 justify-content-center">
-            <h2 class="text-center h2-responsive">
-
-                Guitar Tools</h2>
-            <p class="text-center px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quasi
-                hic, magni similique doloribus saepe reprehenderit natus eaque eveniet delectus nihil quos omnis,
-                molestias id. Soluta eos quaerat quod accusamus.</p>
-        </header>
-    </div>
-
     <section id="tools">
-        <div class="container py-3">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>1) Intervalle ear trainer</h3>
-                </div>
-            </div>
-            <div class="container w-75 py-3">
-                <div class="row">
-                    <div class="col-md-6">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eaque recusandae illum alias
-                            asperiores ad sint aperiam, esse deleniti molestiae nesciunt repellat magni atque commodi ab
-                            suscipit nemo corporis ea?</p>
-                    </div>
-                    <div class="col-md-3 col-6 py-2"><img src="img/cover.jpg" alt="img" class="img-fluid"></div>
-                    <div class="col-md-3 col-6 py-2"><img src="img/cover.jpg" alt="img" class="img-fluid"></div>
-                </div>
-            </div>
-        </div>
-        <div class="container py-3">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>2) Metronome</h3>
-                </div>
-            </div>
-            <div class="container w-75 py-3">
-                <div class="row">
-                    <div class="col-md-6">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eaque recusandae illum alias
-                            asperiores ad sint aperiam, esse deleniti molestiae nesciunt repellat magni atque commodi ab
-                            suscipit nemo corporis ea?</p>
-                    </div>
-                    <div class="col-md-3 col-6 py-2"><img src="img/cover.jpg" alt="img" class="img-fluid"></div>
-                    <div class="col-md-3 col-6 py-2"><img src="img/cover.jpg" alt="img" class="img-fluid"></div>
-                </div>
-            </div>
-        </div>
-        <div class="container py-3">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>3) Tempo Calculator</h3>
-                </div>
-            </div>
-            <div class="container w-75 py-3">
-                <div class="row">
-                    <div class="col-md-6">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eaque recusandae illum alias
-                            asperiores ad sint aperiam, esse deleniti molestiae nesciunt repellat magni atque commodi ab
-                            suscipit nemo corporis ea?</p>
-                    </div>
-                    <div class="col-md-3 col-6 py-2"><img src="img/cover.jpg" alt="img" class="img-fluid"></div>
-                    <div class="col-md-3 col-6 py-2"><img src="img/cover.jpg" alt="img" class="img-fluid"></div>
-                </div>
-            </div>
-        </div>
-        <div class="container py-3">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>4) Countdown Tempo</h3>
-                </div>
-            </div>
-            <div class="container w-75 py-3">
-                <div class="row">
-                    <div class="col-md-6">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eaque recusandae illum alias
-                            asperiores ad sint aperiam, esse deleniti molestiae nesciunt repellat magni atque commodi ab
-                            suscipit nemo corporis ea?</p>
-                    </div>
-                    <div class="col-md-6 col-sm-12 py-2"><img src="img/cover.jpg" alt="img" class="img-fluid"></div>
-                </div>
-            </div>
-        </div>
-        <div class="container py-3">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>5) Blank Papers</h3>
-                </div>
-            </div>
-            <div class="container w-75 py-3">
-                <div class="row">
-                    <div class="col-md-6 col-sm-12">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eaque recusandae illum alias
-                            asperiores ad sint aperiam, esse deleniti molestiae nesciunt repellat magni atque commodi ab
-                            suscipit nemo corporis ea?</p>
-                    </div>
-                    <div class="col-md-6 col-sm-12 py-2"><img src="img/cover.jpg" alt="img" class="img-fluid"></div>
+        <div class="col-md-12">
+            <header class="py-5 justify-content-center">
+                <h2 class="text-center h2-responsive scratched text-white display-2">
 
+                    Guitar Tools</h2>
+                <p class="text-center px-5">Many tools can make your guitar playing more easy, fun and most importantly
+                    sounds better <br>
+                    In this section you will find a collection of the best tools. <br>
+                    Note that there are other tools that you can use while playing guitar</p>
+            </header>
+        </div>
+
+        <section id="tools">
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>1. Intervalle ear trainer</h3>
+                    </div>
+                </div>
+                <div class="container w-75 py-3">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>In this exercise, you will hear two notes in sequence. Your goal is to identify the
+                                interval between the two notes. For
+                                best results, practice a little bit every day.
+                            </p>
+                        </div>
+                        <div class="col-md-3 col-6 py-2">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hnzJfG1Eveg"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 py-2">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_khiTsTsg2c"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>2. Metronome</h3>
+                    </div>
+                </div>
+                <div class="container w-75 py-3">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>A metronome is a device that produces an audible
+                                click or other sound at a regular
+                                interval that can be set by the user, typically in beats per minute. Musicians use the
+                                device to practice playing to a
+                                regular pulse.</p>
+                        </div>
+                        <div class="col-md-3 col-6 py-2">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ymJIXzvDvj4"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 py-2">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xpiVrEET-YQ"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>3. Tempo Calculator</h3>
+                    </div>
+                </div>
+                <div class="container w-75 py-3">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>Measure any tempo like your heart rate or a songs rhythm in beats per minute (BPM). <br>
+                                These apps help you track the Beat Per Minute for any song so you can
+                                practice it easily on your own <br>
+                                We have here two examples of good apps that do this job for you.</p>
+                        </div>
+                        <div class="col-md-3 col-6 py-2">
+                            <a href="https://play.google.com/store/apps/details?id=com.ignacemaes.bpmtap&hl=en&gl=US"
+                                target="_blank"><img src="img/bpm.webp" alt="img" class="img-fluid"></a>
+                        </div>
+                        <div class="col-md-3 col-6 py-2">
+                            <a href="https://play.google.com/store/apps/details?id=com.triplea.bpmcalculator&hl=en&gl=US"
+                                target="_blank"><img src="img/bpm2.webp" alt="img" class="img-fluid"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>4. Guitar Tuner</h3>
+                    </div>
+                </div>
+                <div class="container w-75 py-3">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>Tune your guitar easily with the assist of many guitar tuner apps and online guitar
+                                tuners.
+                                Instead of tuning your guitar by ear, these apps and tools assist beginners through this
+                                important step.
+                            </p>
+                        </div>
+                        <div class="col-md-6 col-sm-12 py-2">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jrj0mL5G-l0"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>5. Blank Papers</h3>
+                    </div>
+                </div>
+                <div class="container w-75 py-3">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <p>Manuscript paper (sometimes staff paper in U.S. English, or just music paper) is paper
+                                preprinted with staffs ready for
+                                musical notation. Manuscript paper is also available for drum notation and guitar
+                                tabulature.</p>
+                        </div>
+                        <div class="col-md-6 col-sm-12 py-2">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/r0Q8cElmQHE"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
     <!-- **************************** Tools Ends ****************************** -->
     <!-- ******************************* Tips ********************************* -->
-    <div class="col-md-12">
-        <header class="py-5 justify-content-center">
-            <h2 class="text-center h2-responsive">
+    <section id="tips">
+        <div class="col-md-12">
+            <header class="py-5 justify-content-center">
+                <h2 class="text-center h2-responsive scratched display-2">
 
-                Guitar Tools</h2>
-            <p class="text-center px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quasi
-                hic, magni similique doloribus saepe reprehenderit natus eaque eveniet delectus nihil quos omnis,
-                molestias id. Soluta eos quaerat quod accusamus.</p>
-        </header>
-    </div>
+                    Guitar Tips</h2>
+                <p class="text-center px-5">Many tools can make your guitar playing more easy, fun and most importantly
+                    sounds better <br>
+                    In this section you will find a collection of the best tools. <br>
+                    Note that there are other tools that you can use while playing guitar</p>
+            </header>
+        </div>
 
-    <div class="container">
-        <div class="row">
-            <h3>Tip 1</h3>
+        <div class="container w-75">
+            <div class="row">
+                <h3 class="py-4">Learn guitar systematically</h3>
+            </div>
+            <div class="row ">
+                <p>Beyond just the basic chords, scales and strumming patterns, a good teacher can offer valuable
+                    feedback and help you
+                    <strong> avoid common mistakes</strong> that you make in the beginning. However, some of the best
+                    guitar players on
+                    this planet including
+                    <strong> Jimi Hendrix</strong>, <strong>Eric Clapton</strong>, <strong>Yngwie Malmsteen</strong>,
+                    <strong>Magnus Karlsson</strong>, <strong>and Herman Li</strong> are <span
+                        style="color: darkblue;"><strong>self-taught</strong></span>. Thus,
+                    learning the guitar
+                    by yourself at home is fine. If you want to learn fast and not develop bad habits, you have to
+                    practice systematically
+                    though. Even without a guitar teacher, it is a well-structured workout routine that helped Hendrix,
+                    Clapton, and co. to
+                    reach that high level of virtuosity. <br> <br>
+                    Although being able to play your favorite songs might be your superior goal, the key to playing
+                    songs is to build <span>proper
+                        technique and motor skills first</span>. You have to understand what and how to practice,
+                    otherwise
+                    learning songs might just
+                    feel like color by numbers. I know, answering these questions can be difficult, especially if you do
+                    not know where to
+                    start, but luckily apps like Fretello can help you with that.
+                </p>
+            </div>
+            <div class="row">
+                <h3 class="py-4">Be patient</h3>
+            </div>
+            <div class="row">
+                <p>Everyone wants to learn guitar quickly, but it demands patience and persistence. I always wanted to
+                    learn solos and play
+                    by ear from the get-go. I did not understand that <strong>the more you try to rush the process of
+                        learning
+                        guitar, the bigger
+                        your chances are that bad habits and ultimately frustration will set in</strong>. As a result, I
+                    quit playing
+                    when I was in high
+                    school. When learning guitar, commit to it for the long haul. Your ability as a player will grow in
+                    leaps and bounds by
+                    it. <br> <br>
+                    However, practicing consistently does not mean that you have to practice for several hours a day to
+                    become a good
+                    player. If done properly, practicing 20 minutes 3 to 5 days a week guarantees you to progress
+                    quickly.</p>
+            </div>
+            <div class="row">
+                <h3 class="py-4">Stop comparing yourself to others</h3>
+            </div>
+            <div class="row">
+                <p>I remember that whenever I heard a good guitarist play I always enjoyed listening, but I also was a
+                    bit jealous because
+                    I wasn’t just as good. I constantly got the feeling that I have to run home and practice.
+                    <strong>Ego</strong> was
+                    getting in the way,
+                    especially when I played with others. <br> <br>
+                    <strong> Stop comparing yourself to others right now.</strong> Compare yourself to yourself! Listen
+                    to recordings of
+                    you playing a month
+                    before. Making recordings of yourself playing is a great way to track your progress. <br> <br>
+                    There will always be better guitar players than you, even if you become the next John Petrucci. Get
+                    over it.</p>
+            </div>
+            <div class="row">
+                <h3 class="py-4">Start practicing scales early</h3>
+            </div>
+            <div class="row">
+                <p> The thing with chords is that you always have to <strong>synchronize multiple fingers at
+                        once</strong>, which can be
+                    difficult especially
+                    if you are just about to start. If you start with scales, you have to think of <strong>only one
+                        finger at a
+                        time</strong>. Later, when
+                    you do chords, your brain already knows the specific positions because chords are just snippets of
+                    scales. As a result,
+                    you will be able to learn and execute chords much faster if you know some scales before. <br> <br>
+                <div class=" container d-flex justify-content-center">
+                    <img src="img/scale.png" alt="scale" class="img-fluid ">
+                </div>
+                <figcaption class="figure-caption w-100 text-center">The A minor pentatonic scale</figcaption>
+                In general, start with the minor pentatonic scale, especially if you are interested in rock. A large
+                chunk of the rock
+                library uses the minor pentatonic scale and it is easy to learn. Later, when you learn some classic rock
+                solos you will
+                know the shapes. It will be familiar territory, which is a great feeling even if you are a beginner. The
+                minor
+                pentatonic scale is also the first thing you will learn if you practice with our Fretello app.
+
+                </p>
+            </div>
+            <div class="row">
+                <h3 class="py-4">Don’t quit</h3>
+            </div>
+            <div class="row pb-4">
+                <p>If you are not where you want to be, look back and see how far you have come. Every guitar player
+                    will hit the wall at
+                    some point. If you feel like you are not progressing at all despite daily practice, the best thing
+                    to do is <strong>relax</strong> and
+                    play something <strong>fun</strong> you like. Play new things for a week, try to work something out
+                    on your own, then
+                    come back to the
+                    place you were before and give it another try. <br> <br>
+                    These walls that pop up during your ascent to guitar greatness usually happen just before you
+                    reach your next
+                    level. <strong>Keep at it.</strong></p>
+            </div>
         </div>
-        <div class="row">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam saepe, tempora nisi tempore corrupti, dolor
-                similique odit aliquam ab magni dolore odio corporis iure explicabo eos magnam eius at ducimus.</p>
-        </div>
-        <div class="row">
-            <h3>Tip 2</h3>
-        </div>
-        <div class="row">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam saepe, tempora nisi tempore corrupti, dolor
-                similique odit aliquam ab magni dolore odio corporis iure explicabo eos magnam eius at ducimus.</p>
-        </div>
-        <div class="row">
-            <h3>Tip 3</h3>
-        </div>
-        <div class="row">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam saepe, tempora nisi tempore corrupti, dolor
-                similique odit aliquam ab magni dolore odio corporis iure explicabo eos magnam eius at ducimus.</p>
-        </div>
-        <div class="row">
-            <h3>Tip 4</h3>
-        </div>
-        <div class="row">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam saepe, tempora nisi tempore corrupti, dolor
-                similique odit aliquam ab magni dolore odio corporis iure explicabo eos magnam eius at ducimus.</p>
-        </div>
-        <div class="row">
-            <h3>Tip 5</h3>
-        </div>
-        <div class="row">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam saepe, tempora nisi tempore corrupti, dolor
-                similique odit aliquam ab magni dolore odio corporis iure explicabo eos magnam eius at ducimus.</p>
-        </div>
-    </div>
+    </section>
     <!-- ***************************** Tips Ends ******************************* -->
     <!-- ************************** Footer *********************************-->
 
     <footer class="section footer-classic context-dark bg-image border-top border-white"
-        style="background: transparent;">
+        style="background-color:#28363d;">
         <div class="container py-3">
             <div class="row row-30">
                 <div class="col-md-4 col-6">
                     <div class="pr-xl-4"><strong>
-                            <h5 class="text-center py-3">A propos</h5>
-                            <h4 class="">GuitaPro</h4>
+                            <h4 class="text-center py-3 text-white">A propos</h4>
+                            <h5 class="text-white">GuitaPro</h5>
                         </strong>
-                        <p class="" style="font-size: small;">We are a 5 stars hotel, All hotels and
-                            vacation rental properties
-                            listed
-                            on this website are independently owned and operated.</p>
+                        <p class="text-white text-justify" style="font-size: small;">GuitaPro.com, created by Wissem
+                            Aouichi, is
+                            dedicated to bringing the highest quality guitar tutorials to beginner
+                            guitarists. <br> Through creating fun and engaging guitar lessons, we aim to spread our love
+                            of
+                            the guitar to as many new
+                            players as possible.</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-6">
-                    <h5 class="text-center py-4">Contacts</h5>
-                    <dl class="contact-list ">
-                        <dt><i class="fas fa-map-marked-alt"></i> Address:</dt>
-                        <dd>798 South Park Avenue, Tunisia, Tunis</dd>
+                <div class="col-md-4 col-6 text-center">
+                    <h4 class="text-center py-4 text-white">Contacts</h4>
+                    <dl class="contact-list">
+                        <dt class="text-white"><i class="fas fa-map-marked-alt"></i> Address:</dt>
+                        <dd class="text-white" style="font-size: small;">798 South Park Avenue, Tunisia, Tunis</dd>
                     </dl>
-                    <dl class="contact-list ">
-                        <dt><i class="fas fa-envelope-open-text"></i> Email:</dt>
-                        <dd><a href="mailto:#">GuitaPro2020@gmail.com</a></dd>
+                    <dl class="contact-list">
+                        <dt class="text-white"><i class="fas fa-envelope-open-text text-white"></i> Email:</dt>
+                        <dd><a href="mailto:#" class="text-white" style="font-size: small;">GuitaPro2020@gmail.com</a>
+                        </dd>
                     </dl>
-                    <dl class="contact-list ">
-                        <dt><i class="fas fa-phone-alt"></i> Phones:</dt>
-                        <dd><a href="tel:#">+216 52 669 340</a> <span>or</span> <a href="tel:#">+216 21 478 360</a>
+                    <dl class="contact-list">
+                        <dt class="text-white"><i class="fas fa-phone-alt text-white"></i> Phones:</dt>
+                        <dd><a href="tel:#" class="text-white" style="font-size: small;">+216 52 669 340</a>
+                            <span class="text-white">or</span> <a href="tel:#" class="text-white">+216
+                                21 478 360</a>
                         </dd>
                     </dl>
                 </div>
                 <div class="col-md-4 col-sm-12">
                     <div class="text-center">
-                        <h5 class="w-100 py-4">Links</h5>
+                        <h5 class="w-100 py-4 text-white">Links</h5>
                         <div class="d-flex justify-content-around">
                             <a href="https://www.facebook.com/bootsnipp"><i
                                     class="fa fa-facebook-square fa-3x social"></i></a>
@@ -280,7 +408,8 @@
             </div>
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <p class="rights pt-3"><span>© </span><span class="copyright-year">2020</span><span>
+                    <p class="rights pt-3 text-white" style="font-size: smaller;"><span>© </span><span
+                            class="copyright-year">2020</span><span>
                         </span><span>Wissem
                             Aouichi</span><span>. </span><span>All
                             Rights Reserved.</span></p>
@@ -291,6 +420,7 @@
     <!-- ************************** Footer Ends*********************************-->
 
     <!-- ********************** Bootstrap JS *************************** -->
+    <script src="js/button.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/bootstrap.bundle.js.map"></script>

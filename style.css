@@ -1,1 +1,183 @@
-body
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    font-family: 'Open Sans', sans-serif;
+
+}
+@font-face {
+    font-family: scratched;
+    src: url(font/scratched.ttf);
+}
+
+@font-face {
+    font-family: scratched;
+    src: url(font/scratched\ bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: est;
+    src: url(font/Eusthalia\ Clean.ttf);
+}
+
+@font-face {
+    font-family: eststamped;
+    src: url(font/Eusthalia\ Stamped.ttf);
+}
+
+@font-face {
+    font-family: silently;
+    src: url(font/Silently.ttf);
+}
+
+#alllessonssection {
+    background: linear-gradient(to bottom right,#a5bdbc, #fff8e5);
+
+}
+
+#songssection {
+    background: linear-gradient(to bottom right,#a5bdbc, #fff8e5);
+
+}
+
+#songstop {
+
+}
+
+#songimg {
+    position: absolute;
+    z-index: ;
+    opacity: 0.27;
+    animation: myanimation 10s infinite ease-in-out;
+    padding-top: 10rem;
+}
+
+
+@keyframes myanimation {
+    0% {transform: scale(1); left:0%}
+    12.5% {transform: scale(1.05); left:10%;}
+    25% {transform: scale(1.1); left:30%;}
+    37.5% {transform: scale(1.2); left:40%;}
+    50% {transform: scale(1.3); left:50%}
+    62.5% {transform: scale(1.2); left:40%}
+    75% {transform: scale(1.10); left:30%}
+    87.5% {transform: scale(1.05);left:20%}
+    100% {transform: scale(1);left:10%}
+}
+
+.songimg {
+    width: 20rem;
+    height: 16rem;
+    border-radius: 8px;
+}
+
+.scratched {
+    font-family: scratched;
+}
+
+/*------------------------ Home --------------------*/
+#hero {
+    background-image: url('img/cover.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center center; 
+    height: 41rem;
+}
+
+#slogan {
+    font-family: eststamped; 
+    font-weight: bold;
+}
+
+#videowrapper {
+    padding: 0;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 2px 2px 0 0 #bcbcbc, 8px 8px 16px rgba(0,0,0,0.1);
+}
+
+#cardsection {
+    background: linear-gradient(#a5bdbc, #fff8e5);
+}
+
+#homecard1, #homecard2, #homecard3 {
+    height: 21rem; 
+    border-radius: 20px;
+    transition: 0.8s ease-in-out;
+}
+
+#homecard1 {
+    background: #fff8e5; 
+    box-shadow: 1px 3px 3px #99AEAD;
+}
+
+#homecard1:hover , #homecard2:hover, #homecard3:hover{
+    transform: translateY(-15px);
+}
+
+#homecard2 {
+    background: #ffe9ed; 
+    box-shadow: 1px 3px 3px #99AEAD;
+}
+
+#homecard3 {
+    background: #e7f7ee; 
+    box-shadow: 1px 3px 3px #99AEAD;
+}
+
+.cardtext {
+    font-size: smaller;
+}
+#imghome {
+    transition: 1s;
+}
+
+#imghome:hover {
+    transform: scale(1.075);
+    transition: 1s ease-in;
+}
+
+
+
+/*--------------------- All Lessons -----------------------*/
+
+#lessonsimg {
+    opacity: 0.5;
+    height: 100%;
+}
+
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgb(85, 113, 163);
+  color: white;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 10px;
+  transition: 0.8s ease-in-out;
+  opacity: 0.5;
+}
+
+#myBtn:hover {
+  background-color: #555;
+  border-radius: 50px;
+  opacity: 0.8;
+}
+
+/*---------------------- Tools & Tips -------------------*/
+
+#tools {
+    background-color: #9bc6c7;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='33' height='33' fill-opacity='0.29' fill='%2399bdbb'/%3E%3C/svg%3E");
+}
+
+#tips {
+    background-color: #e7f7ee;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='33' height='33' fill-opacity='0.29' fill='%23dbebe2'/%3E%3C/svg%3E");
+}

@@ -12,7 +12,7 @@
 
 <body>
     <!-- *********************** Navbar ******************************** -->
-    <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top" id="mainnav">
         <div class="container">
             <a class="navbar-brand" href="index.html"><strong>GuitaPro</strong></a>
             <button class="navbar-toggler float-right" type="button" data-toggle="collapse"
@@ -46,10 +46,10 @@
                         <a class="nav-link" href="private.html">Get Private Lessons</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
+                        <a class="nav-link" href="signin.html">Sign in</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sign up</a>
+                        <a class="nav-link" href="signup.html">Sign up</a>
                     </li>
                 </ul>
 
@@ -59,16 +59,16 @@
     <!-- ********************** Navbar Ends ****************************** -->
 
     <!-- ********************** Full Page Intro ************************** -->
-    <div class="view"
-        style="background-image: url('img/cover.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center; height: 41rem;">
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+    <div class="view" id="hero">
         <!-- Mask & flexbox options-->
 
         <!-- Content -->
         <div class="container h-100">
             <div class="d-flex h-100 text-center align-items-center">
                 <div class="w-100 text-white">
-                    <h1 class="display-3 h1-responsive">Songs</h1>
-                    <p class="lead mb-0">Text here change it later</p>
+                    <h1 class="display-1 scratched">Songs</h1>
+                    <h2 class="lead mb-0 " id="slogan">A selected collection</h2>
                 </div>
             </div>
         </div>
@@ -79,207 +79,272 @@
     </div>
     <!-- ********************** Full Page Intro Ends *********************** -->
     <!-- **************************** Songs ****************************** -->
-    <section>
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>Beginner</h3>
+    <section id="songssection">
+        <section id="songstop">
+            <div id="songimg">
+                <div class="contaner-fluid">
+                    <img src="img/beatles.jpg" alt="" class="img-fluid songimg m-5"><br>
+                    <img src="img/pink.jpg" alt="" class="img-fluid songimg m-5"><br>
                 </div>
             </div>
-            <div class="row d-flex justify-content-end">
-                <table class="table table-hover w-75">
-                    <thead>
-                        <tr>
-                            <th scope="col"></th>
-                            <th scope="col">Title</th>
-                            <th scope="col">Artist</th>
-                            <th scope="col">Date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry the Bird</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td>Larry the Bird</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">5</th>
-                            <td>Larry the Bird</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>Intermidiate</h3>
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="scratched">Beginner</h3>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-end">
+                    <table class="table table-hover w-75 table-sm">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Title</th>
+                                <th scope="col">Artist</th>
+                                <th scope="col">Download Tabs</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Jeff Buckley</td>
+                                <td>Hallelujah</td>
+                                <td><a href="tabs/Hallelujah by Jeff Buckley.pdf" download><i
+                                            class="fas fa-print pl-4"></i></a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Animals</td>
+                                <td>House of the rising sun</td>
+                                <td><a href="tabs/House Of The Rising Sun by Animals.pdf" download><i
+                                            class="fas fa-print pl-4"></i></a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Tracy Chapman</td>
+                                <td>Fast Car</td>
+                                <td><a href="tabs/Fast Car by Tracey Chapman.pdf" download><i
+                                            class="fas fa-print pl-4"></i></a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Oasis</td>
+                                <td>Wonderwall</td>
+                                <td><a href="tabs/Wonderwall by Oasis.pdf" download><i
+                                            class="fas fa-print pl-4"></i></a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Coldplay</td>
+                                <td>Yellow</td>
+                                <td><a href="tabs/Yellow Acoustic by Coldplay.pdf" download><i
+                                            class="fas fa-print pl-4"></i></a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Coldplay</td>
+                                <td>Yellow</td>
+                                <td><a href="tabs/Yellow Acoustic by Coldplay.pdf" download><i
+                                            class="fas fa-print pl-4"></i></a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Coldplay</td>
+                                <td>Yellow</td>
+                                <td><a href="tabs/Yellow Acoustic by Coldplay.pdf" download><i
+                                            class="fas fa-print pl-4"></i></a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Coldplay</td>
+                                <td>Yellow</td>
+                                <td><a href="tabs/Yellow Acoustic by Coldplay.pdf" download><i
+                                            class="fas fa-print pl-4"></i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="scratched">Intermidiate</h3>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-end">
+                    <table class="table table-hover w-75 table-sm">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Title</th>
+                                <th scope="col">Artist</th>
+                                <th scope="col">Download Tabs</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Guns 'N Roses</td>
+                                <td>Sweet child O mine</td>
+                                <td><a href="https://www.guitartabs.cc/print_tab.php?id=160660" download><i
+                                            class="fas fa-print pl-4"></i></a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jimi Hendrix</td>
+                                <td>Little wing</td>
+                                <td><a href="https://www.guitartabs.cc/print_tab.php?id=96556" download><i
+                                            class="fas fa-print pl-4"></i></a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Steve Ray Vaughan</td>
+                                <td>Pride and Joy</td>
+                                <td><a href="https://www.guitartabs.cc/print_tab.php?id=278486" download><i
+                                            class="fas fa-print pl-4"></i></a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Chuck Berry</td>
+                                <td>Johnny B Goode</td>
+                                <td><a href="https://www.guitartabs.cc/print_tab.php?id=97794" download><i
+                                            class="fas fa-print pl-4"></i></a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Pearl Jam</td>
+                                <td>Black</td>
+                                <td><a href="https://www.guitartabs.cc/print_tab.php?id=115871" download><i
+                                            class="fas fa-print pl-4"></i></a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Coldplay</td>
+                                <td>Yellow</td>
+                                <td><a href="tabs/Yellow Acoustic by Coldplay.pdf" download><i
+                                            class="fas fa-print pl-4"></i></a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Coldplay</td>
+                                <td>Yellow</td>
+                                <td><a href="tabs/Yellow Acoustic by Coldplay.pdf" download><i
+                                            class="fas fa-print pl-4"></i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="scratched">Advanced</h3>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-end">
+                    <table class="table table-hover w-75 table-sm">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Title</th>
+                                <th scope="col">Artist</th>
+                                <th scope="col">Print Tabs</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Jeff Buckley</td>
+                                <td>Hallelujah</td>
+                                <td><a href="https://www.guitartabs.cc/print_tab.php?id=160660" download><i
+                                            class="fas fa-print pl-4"></i></a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Animals</td>
+                                <td>House of the rising sun</td>
+                                <td><a href="https://www.guitartabs.cc/print_tab.php?id=96556" download><i
+                                            class="fas fa-print pl-4"></i></a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Tracy Chapman</td>
+                                <td>Fast Car</td>
+                                <td><a href="https://www.guitartabs.cc/print_tab.php?id=278486" download><i
+                                            class="fas fa-print pl-4"></i></a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Oasis</td>
+                                <td>Wonderwall</td>
+                                <td><a href="https://www.guitartabs.cc/print_tab.php?id=97794" download><i
+                                            class="fas fa-print pl-4"></i></a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Coldplay</td>
+                                <td>Yellow</td>
+                                <td><a href="https://www.guitartabs.cc/print_tab.php?id=115871" download><i
+                                            class="fas fa-print pl-4"></i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-            <div class="row d-flex justify-content-end">
-                <table class="table table-hover w-75">
-                    <thead>
-                        <tr>
-                            <th scope="col"></th>
-                            <th scope="col">Title</th>
-                            <th scope="col">Artist</th>
-                            <th scope="col">Date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry the Bird</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td>Larry the Bird</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">5</th>
-                            <td>Larry the Bird</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>Advanced</h3>
+        </section>
+        <section>
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-md-6 align-self-center">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, dolores. Illo omnis sed ipsum
+                            pariatur
+                            consequuntur nihil. Voluptatibus dignissimos laudantium corporis iure corrupti dolorum, odio
+                            hic
+                            quos, porro, autem culpa.</p>
+                    </div>
+                    <div class="col-md-6"><img src="img/cover.jpg" alt="" class="img-fluid"></div>
                 </div>
             </div>
-            <div class="row d-flex justify-content-end">
-                <table class="table table-hover w-75">
-                    <thead>
-                        <tr>
-                            <th scope="col"></th>
-                            <th scope="col">Title</th>
-                            <th scope="col">Artist</th>
-                            <th scope="col">Date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Black</td>
-                            <td>Pearl Jam</td>
-                            <td>1968</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Pearl Jam</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>1968</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td>Larry the Bird</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">5</th>
-                            <td>Larry the Bird</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, dolores. Illo omnis sed ipsum
-                        pariatur
-                        consequuntur nihil. Voluptatibus dignissimos laudantium corporis iure corrupti dolorum, odio hic
-                        quos, porro, autem culpa.</p>
-                </div>
-                <div class="col-md-6"><img src="img/cover.jpg" alt="" class="img-fluid"></div>
-            </div>
-        </div>
+        </section>
     </section>
     <!-- **************************** Songs Ends ****************************** -->
     <!-- ************************** Footer *********************************-->
 
     <footer class="section footer-classic context-dark bg-image border-top border-white"
-        style="background: transparent;">
+        style="background-color:#28363d;">
         <div class="container py-3">
             <div class="row row-30">
                 <div class="col-md-4 col-6">
                     <div class="pr-xl-4"><strong>
-                            <h5 class="text-center py-3">A propos</h5>
-                            <h4 class="">GuitaPro</h4>
+                            <h4 class="text-center py-3 text-white">A propos</h4>
+                            <h5 class="text-white">GuitaPro</h5>
                         </strong>
-                        <p class="" style="font-size: small;">We are a 5 stars hotel, All hotels and
-                            vacation rental properties
-                            listed
-                            on this website are independently owned and operated.</p>
+                        <p class="text-white text-justify" style="font-size: small;">GuitaPro.com, created by Wissem
+                            Aouichi, is
+                            dedicated to bringing the highest quality guitar tutorials to beginner
+                            guitarists. <br> Through creating fun and engaging guitar lessons, we aim to spread our love
+                            of
+                            the guitar to as many new
+                            players as possible.</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-6">
-                    <h5 class="text-center py-4">Contacts</h5>
-                    <dl class="contact-list ">
-                        <dt><i class="fas fa-map-marked-alt"></i> Address:</dt>
-                        <dd>798 South Park Avenue, Tunisia, Tunis</dd>
+                <div class="col-md-4 col-6 text-center">
+                    <h4 class="text-center py-4 text-white">Contacts</h4>
+                    <dl class="contact-list">
+                        <dt class="text-white"><i class="fas fa-map-marked-alt"></i> Address:</dt>
+                        <dd class="text-white" style="font-size: small;">798 South Park Avenue, Tunisia, Tunis</dd>
                     </dl>
-                    <dl class="contact-list ">
-                        <dt><i class="fas fa-envelope-open-text"></i> Email:</dt>
-                        <dd><a href="mailto:#">GuitaPro2020@gmail.com</a></dd>
+                    <dl class="contact-list">
+                        <dt class="text-white"><i class="fas fa-envelope-open-text text-white"></i> Email:</dt>
+                        <dd><a href="mailto:#" class="text-white" style="font-size: small;">GuitaPro2020@gmail.com</a>
+                        </dd>
                     </dl>
-                    <dl class="contact-list ">
-                        <dt><i class="fas fa-phone-alt"></i> Phones:</dt>
-                        <dd><a href="tel:#">+216 52 669 340</a> <span>or</span> <a href="tel:#">+216 21 478 360</a>
+                    <dl class="contact-list">
+                        <dt class="text-white"><i class="fas fa-phone-alt text-white"></i> Phones:</dt>
+                        <dd><a href="tel:#" class="text-white" style="font-size: small;">+216 52 669 340</a>
+                            <span class="text-white">or</span> <a href="tel:#" class="text-white">+216
+                                21 478 360</a>
                         </dd>
                     </dl>
                 </div>
                 <div class="col-md-4 col-sm-12">
                     <div class="text-center">
-                        <h5 class="w-100 py-4">Links</h5>
+                        <h5 class="w-100 py-4 text-white">Links</h5>
                         <div class="d-flex justify-content-around">
                             <a href="https://www.facebook.com/bootsnipp"><i
                                     class="fa fa-facebook-square fa-3x social"></i></a>
@@ -292,7 +357,8 @@
             </div>
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <p class="rights pt-3"><span>© </span><span class="copyright-year">2020</span><span>
+                    <p class="rights pt-3 text-white" style="font-size: smaller;"><span>© </span><span
+                            class="copyright-year">2020</span><span>
                         </span><span>Wissem
                             Aouichi</span><span>. </span><span>All
                             Rights Reserved.</span></p>
@@ -303,6 +369,7 @@
     <!-- ************************** Footer Ends*********************************-->
 
     <!-- ********************** Bootstrap JS *************************** -->
+    <script src="js/button.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/bootstrap.bundle.js.map"></script>
