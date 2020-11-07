@@ -83,7 +83,8 @@
                             <div class="modal-dialog text-dark" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">Jump start to your first guitar
+                                            lesson</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
@@ -107,45 +108,49 @@
                                                     <option>Classic Guitar</option>
                                                 </select>
                                             </div>
+                                            <p>For How long you have been playing guitar ?</p>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="exampleRadios"
-                                                    id="exampleRadios1" value="option1" checked>
-                                                <label class="form-check-label" for="exampleRadios1">
-                                                    2-6 months
+                                                <input class="form-check-input" type="radio" name="periodRadios"
+                                                    id="period1" value="option1" checked>
+                                                <label class="form-check-label" for="period1">
+                                                    0-6 months
                                                 </label>
                                             </div>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="exampleRadios"
-                                                    id="exampleRadios1" value="option1" checked>
-                                                <label class="form-check-label" for="exampleRadios1">
-                                                    Default radio
+                                                <input class="form-check-input" type="radio" name="periodRadios"
+                                                    id="period2" value="option1">
+                                                <label class="form-check-label" for="period2">
+                                                    6 months - 1 year
                                                 </label>
                                             </div>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="exampleRadios"
-                                                    id="exampleRadios1" value="option1" checked>
-                                                <label class="form-check-label" for="exampleRadios1">
-                                                    Default radio
+                                                <input class="form-check-input" type="radio" name="periodRadios"
+                                                    id="period3" value="option1">
+                                                <label class="form-check-label" for="period3">
+                                                    1-2 years
                                                 </label>
                                             </div>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="exampleRadios"
-                                                    id="exampleRadios1" value="option1" checked>
-                                                <label class="form-check-label" for="exampleRadios1">
-                                                    Default radio
+                                                <input class="form-check-input" type="radio" name="periodRadios"
+                                                    id="period4" value="option1">
+                                                <label class="form-check-label" for="period4">
+                                                    2-3 years
                                                 </label>
                                             </div>
-                                            <div class="form-group">
-                                                <label for="exampleFormControlTextarea1">Example textarea</label>
-                                                <textarea class="form-control" id="exampleFormControlTextarea1"
-                                                    rows="3"></textarea>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="periodRadios"
+                                                    id="period5" value="option1">
+                                                <label class="form-check-label" for="period5">
+                                                    >3 years
+                                                </label>
                                             </div>
                                         </form>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary"
                                             data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Begin Learning</button>
+                                        <button type="button" class="btn btn-primary" onclick="gotopage()">Begin
+                                            Learning</button>
                                     </div>
                                 </div>
                             </div>
@@ -284,18 +289,100 @@
         </div>
     </section>
     <section style="background: #28363d;">
-        <div class="view p-5"
+        <div class="view py-5"
             style="background-image: url('img/cover.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center; height: 17rem;">
             <!-- Mask & flexbox options-->
 
             <!-- Content -->
-            <div class="container h-100">
-                <div class="d-flex h-100 text-center align-items-center">
-                    <div class="w-100 text-white">
-                        <h1 class="display-3 h1-responsive scratched">GuitaPro</h1>
-                        <p class="lead mb-0">Bend it like Prince</p><br>
-                        <div class="d-flex justify-content-center">
-                            <button class="btn btn-primary">Get Started</button>
+            <div class="d-flex h-100 text-center align-items-center">
+                <div class="w-100 text-white">
+                    <h1 class="display-1 scratched">GuitaPro</h1>
+                    <h2 class="lead mb-0" id="slogan" style="font-size: xx-large;">Music
+                        for Everyone
+                    </h2><br>
+                    <div class="d-flex justify-content-center">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            Get Started
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog text-dark" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Jump start to your first guitar
+                                            lesson</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="name">Full Name</label>
+                                                <input type="text" class="form-control" id="name"
+                                                    placeholder="David Gilmour">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="age">Age</label>
+                                                <input type="text" class="form-control" id="age">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="guitartype">What type of guitar you like to play ?</label>
+                                                <select class="form-control" id="guitartype">
+                                                    <option>Acoustic Guitar</option>
+                                                    <option>Electric Guitar</option>
+                                                    <option>Classic Guitar</option>
+                                                </select>
+                                            </div>
+                                            <p>For How long you have been playing guitar ?</p>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="periodRadios"
+                                                    id="period1" value="option1" checked>
+                                                <label class="form-check-label" for="period1">
+                                                    0-6 months
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="periodRadios"
+                                                    id="period2" value="option1">
+                                                <label class="form-check-label" for="period2">
+                                                    6 months - 1 year
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="periodRadios"
+                                                    id="period3" value="option1">
+                                                <label class="form-check-label" for="period3">
+                                                    1-2 years
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="periodRadios"
+                                                    id="period4" value="option1">
+                                                <label class="form-check-label" for="period4">
+                                                    2-3 years
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="periodRadios"
+                                                    id="period5" value="option1">
+                                                <label class="form-check-label" for="period5">
+                                                    >3 years
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary" onclick="gotopage()">Begin
+                                            Learning</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -368,6 +455,7 @@
     <!-- ************************** Footer Ends*********************************-->
 
     <!-- ********************** Bootstrap JS *************************** -->
+    <script src="js/getstarted.js"></script>
     <script src="js/button.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>

@@ -1,7 +1,7 @@
 //Get the button
 var mybutton = document.getElementById("myBtn");
 var mynav = document.getElementById("mainnav")
-// When the user scrolls down 20px from the top of the document, show the button
+// When the user scrolls down 350px from the top of the document, show the button
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
