@@ -109,6 +109,14 @@
     height: 41rem;
 }
 
+#heroprivate {
+    background-image: url('img/pr2.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center center; 
+    height: 41rem;
+}
+
 #slogan {
     font-family: eststamped; 
     font-weight: bold;
@@ -162,8 +170,13 @@
     transition: 1s ease-in;
 }
 
+#coach {
+    transition: top  0.5s;
+}
 
-
+#coach:hover {
+    top: -15px;
+}
 /*--------------------- All Lessons -----------------------*/
 
 #lessonsimg {
