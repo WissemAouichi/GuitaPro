@@ -100,13 +100,24 @@
     font-family: scratched;
 }
 
-/*------------------------ Home --------------------*/
-#hero {
-    background-image: url('img/cover.webp'); 
+/*--------------------------------- Home --------------------------------*/
+#hero, #herobeginner {
     background-repeat: no-repeat; 
     background-size: cover; 
     background-position: center center; 
     height: 41rem;
+}
+
+#hero {
+    background-image: url('img/cover.webp'); 
+}
+
+#herobeginner {
+    background-image: url(img/begin1.jpg);
+    }
+
+#herobeginner>div {
+    
 }
 
 #heroprivate {
@@ -170,8 +181,10 @@
     transition: 1s ease-in;
 }
 
+/*---------------------------- Private Lessons ----------------------*/
+
 #coach {
-    transition: top  0.5s;
+    transition: 0.5s;
 }
 
 #coach:hover {
