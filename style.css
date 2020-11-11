@@ -45,7 +45,9 @@
     left: 50%;
     opacity: 0.27;
     padding-top: 10rem;
+    z-index: 0;
 }
+
 
 .slide-rotate-ver-left {
 	-webkit-animation: slide-rotate-ver-left 2s cubic-bezier(0.550, 0.055, 0.675, 0.190) infinite alternate both;
