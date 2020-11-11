@@ -101,7 +101,7 @@
 }
 
 /*--------------------------------- Home --------------------------------*/
-#hero, #herobeginner {
+#hero, #herobeginner, #herointer ,#heroadv {
     background-repeat: no-repeat; 
     background-size: cover; 
     background-position: center center; 
@@ -116,8 +116,12 @@
     background-image: url(img/begin1.jpg);
     }
 
-#herobeginner>div {
-    
+#herointer {
+    background-image: url(img/inter.jpg);
+}
+
+#heroadv {
+    background-image: url(img/adv.jpg);
 }
 
 #heroprivate {
