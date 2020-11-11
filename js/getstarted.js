@@ -15,10 +15,10 @@ function gotopage() {
     else if (myperiod3.checked == true) {
         window.open("inter.html", "_self")
     }
-    else if (myperiod2.checked == true) {
+    else if (myperiod4.checked == true) {
         window.open("inter/inter2.html", "_self")
     }
-    else if (myperiod2.checked == true) {
+    else if (myperiod5.checked == true) {
         window.open("adv.html", "_self")
     }
 }
