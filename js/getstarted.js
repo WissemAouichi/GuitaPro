@@ -12,4 +12,13 @@ function gotopage() {
     else if (myperiod2.checked == true) {
         window.open("beginner/beginnerg21.html", "_self")
     }
+    else if (myperiod3.checked == true) {
+        window.open("inter.html", "_self")
+    }
+    else if (myperiod2.checked == true) {
+        window.open("inter/inter2.html", "_self")
+    }
+    else if (myperiod2.checked == true) {
+        window.open("adv.html", "_self")
+    }
 }

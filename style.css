@@ -101,7 +101,7 @@
 }
 
 /*--------------------------------- Home --------------------------------*/
-#hero, #herobeginner {
+#hero, #herobeginner, #herointer {
     background-repeat: no-repeat; 
     background-size: cover; 
     background-position: center center; 
@@ -116,9 +116,10 @@
     background-image: url(img/begin1.jpg);
     }
 
-#herobeginner>div {
-    
+#herointer{
+    background-image: url(img/inter.jpg);
 }
+
 
 #heroprivate {
     background-image: url('img/pr2.jpg'); 
