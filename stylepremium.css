@@ -236,6 +236,125 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 /* ----------------------------- Pricing cards ------------------------------*/
 
+.m-t-b-5{
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+.mt-3{
+	margin-top: 1.5em;
+}
+.justifycenter{
+    justify-content: center;
+}
+
+.pricing_cards{
+   ;
+    background: #82CAFA;
+    border-radius: 20px;
+   box-shadow: 0px 5px 12px 2px rgb(192, 192, 197);
+}
+
+.col-md-4:nth-of-type(3n+2) .pricing_cards{
+    background: #FBBBB9;
+}
+
+.col-md-4:nth-of-type(3n+3) .pricing_cards{
+    background: #6AFB92;
+}
+
+
+
+.pricing_header{
+	padding: 1.4em;
+    
+    text-align: center;
+    color: #fff;
+    
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing_header h2, .pricing_header h3{
+	margin: 0;
+    letter-spacing: 1px;
+    margin-bottom: 0.5em;
+}
+
+.pricing_body ul{
+
+}
+
+.pricing_body ul li{
+	margin-bottom: 1.25em;
+    color: #fff;
+}
+
+.pricing_body{
+	height: 280px;
+}
+
+.pricing_body ul {
+    list-style-image: none;
+    list-style: none;
+    padding: 0px 0px 0px 10px;
+    margin-top: 20px;
+    list-style: outside none none;
+}
+
+.pricing_body ul li:before{
+	content:'\2713';
+    line-height: 1;
+    font-weight: bolder;
+    margin-right: 1em;
+}
+
+.pricing_footer{
+	
+    text-align: center;
+}
+
+
+.buy-btn{
+	margin-top: 2em;
+    color: #fff;
+    background-color: #31a4f1;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    border-radius: 30px;
+    border:1px solid #31a4f1;
+    box-shadow: 0px 1px 4px 2px rgba(0, 0, 0, 0.48);
+    transition: all 0.3s linear;
+}
+
+.col-md-4:nth-of-type(3n+2) .buy-btn{
+    background-color: #ef9896;
+    border: 1px solid #ef9896;
+}
+
+.col-md-4:nth-of-type(3n+3) .buy-btn{
+    background-color: #3be069;
+    border: 1px solid #3be069;
+}
+
+.buy-btn:hover, .buy-btn:focus{
+	 background-color: #fff;
+	 border:1px solid #31a4f1;
+	 color: #31a4f1;
+}
+
+.col-md-4:nth-of-type(3n+2) .buy-btn:hover, .buy-btn:focus{
+    border:1px solid #ef9896;
+    background-color: #fff;
+    color: #ef9896;
+}
+
+.col-md-4:nth-of-type(3n+3) .buy-btn:hover, .buy-btn:focus{
+    border:1px solid #3be069;
+    background-color: #fff;
+    color: #3be069;
+}
+
 .popular-tag{
     position: absolute;
     top: 18px;
@@ -244,4 +363,18 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     background: white;
     color: #8fa6e6;
     width: 100px;
+}
+
+.col-md-4:nth-of-type(3n+2) .popular-tag{
+    color: #FBBBB9;
+}
+
+
+@media (max-width:991px) and (min-width:590px) {
+    .pl-5{
+    padding-left: 10em;
+}
+.pr-5{
+    padding-right: 10em;
+}
 }
